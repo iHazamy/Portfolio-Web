@@ -23,7 +23,9 @@ RUN composer install --no-dev --optimize-autoloader
 
 # IMPORTANT: Clear Laravel caches (fixes wrong DB path caching)
 RUN php artisan optimize:clear || true
-
+RUN php artisan config:clear || true
+RUN php artisan route:clear || true
+RUN php artisan view:clear || true
 # Create SQLite file in correct Render-safe location
 RUN mkdir -p /tmp && touch /tmp/database.sqlite
 
