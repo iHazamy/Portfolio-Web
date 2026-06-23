@@ -3,24 +3,18 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\URL;
 
 class AppServiceProvider extends ServiceProvider
 {
-    /**
-     * Register any application services.
-     */
     public function register(): void
     {
         //
     }
 
-    /**
-     * Bootstrap any application services.
-     */
-    public function boot()
+    public function boot(): void
     {
-        if (app()->environment('production')) {
-            \Illuminate\Support\Facades\URL::forceScheme('https');
-        }
+        // FORCE HTTPS ALWAYS (safe for Render, fixes mixed content)
+        URL::forceScheme('https');
     }
 }
