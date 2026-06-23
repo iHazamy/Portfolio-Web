@@ -21,9 +21,11 @@ COPY . .
 # Install dependencies
 RUN composer install --no-dev --optimize-autoloader
 
-# Generate Laravel key
-RUN cp .env.example .env || true
-RUN php artisan key:generate || true
+# IMPORTANT: Clear Laravel caches (fixes wrong DB path caching)
+RUN php artisan optimize:clear || true
+
+# Create SQLite file in correct Render-safe location
+RUN mkdir -p /tmp && touch /tmp/database.sqlite
 
 # Expose port
 EXPOSE 10000
