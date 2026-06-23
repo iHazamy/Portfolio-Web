@@ -1,0 +1,68 @@
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    padding: 140px 0;
+}
+
+.hero-badge {
+    display: inline-block;
+    margin-bottom: 28px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.03);
+    color: #93c5fd;
+}
+
+.hero h1 {
+    font-size: 78px;
+    line-height: 1;
+    max-width: 900px;
+    margin-bottom: 28px;
+}
+
+.hero h1 span {
+    color: #60a5fa;
+}
+
+.hero-text {
+    max-width: 700px;
+    font-size: 22px;
+    color: #94a3b8;
+    line-height: 1.7;
+    margin-bottom: 42px;
+}
+
+/* FLOATING UI */
+.floating-card {
+    position: absolute;
+    padding: 16px 20px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(18px);
+    animation: floatCard 6s ease-in-out infinite;
+}
+
+.card-1 {
+    top: 22%;
+    right: 8%;
+}
+
+.card-2 {
+    top: 52%;
+    right: 14%;
+    animation-delay: 1s;
+}
+
+.card-3 {
+    bottom: 14%;
+    left: 10%;
+    animation-delay: 2s;
+}

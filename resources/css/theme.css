@@ -1,0 +1,40 @@
+body.light {
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+body.light .navbar {
+    background: rgba(255,255,255,0.7);
+}
+
+body.light nav a {
+    color: #0f172a;
+}
+
+body.light .hero-text,
+body.light .section p,
+body.light .glass-card li {
+    color: #475569;
+}
+
+body.light .glass-card,
+body.light .skill-card,
+body.light .contact-card,
+body.light .floating-card,
+body.light .hero-badge {
+    background: rgba(255,255,255,0.75);
+    border: 1px solid #e2e8f0;
+}
+
+body.light .secondary {
+    color: #0f172a;
+    border: 1px solid #cbd5e1;
+}
+
+body.light .switch-track {
+    background: #dbeafe;
+}
+
+body.light .switch-thumb {
+    left: 32px;
+}

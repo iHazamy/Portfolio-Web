@@ -1,0 +1,23 @@
+@keyframes bgMove {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-40px);
+    }
+}
+
+@keyframes floatCard {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

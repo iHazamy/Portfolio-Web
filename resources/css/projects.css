@@ -1,0 +1,172 @@
+
+/* =========================
+   PROJECTS PAGE HEADER
+========================= */
+
+.page-header {
+    margin-bottom: 80px;
+}
+
+.page-title {
+    font-size: 72px;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.page-subtitle {
+    max-width: 700px;
+    font-size: 20px;
+    color: #94a3b8;
+    line-height: 1.7;
+}
+
+/* =========================
+   PROJECT GRID
+========================= */
+
+.projects-grid {
+    display: grid;
+    gap: 40px;
+}
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+
+    padding: 32px;
+    border-radius: 28px;
+
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(18px);
+
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(96,165,250,0.3);
+}
+
+/* =========================
+   PROJECT IMAGE AREA
+========================= */
+
+.project-image {
+    min-height: 280px;
+
+    border-radius: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    color: white;
+}
+
+/* GRADIENT VARIANTS */
+.glow-blue {
+    background: radial-gradient(circle at top left,
+        rgba(59,130,246,0.8),
+        #0f172a);
+}
+
+.glow-purple {
+    background: radial-gradient(circle at top left,
+        rgba(168,85,247,0.8),
+        #111827);
+}
+
+.glow-green {
+    background: radial-gradient(circle at top left,
+        rgba(34,197,94,0.8),
+        #0f172a);
+}
+
+/* =========================
+   PROJECT CONTENT
+========================= */
+
+.project-content h2 {
+    font-size: 36px;
+    margin: 18px 0;
+}
+
+.project-content p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.project-content ul {
+    padding-left: 20px;
+}
+
+.project-content li {
+    margin-bottom: 10px;
+    color: #94a3b8;
+}
+
+/* =========================
+   TAGS
+========================= */
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-tags span {
+    padding: 8px 14px;
+    border-radius: 999px;
+
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.08);
+
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .page-title {
+        font-size: 52px;
+    }
+}
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+body.light .project-card {
+    background: rgba(255,255,255,0.8);
+    border: 1px solid #e2e8f0;
+}
+
+body.light .project-tags span {
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+}
+
+body.light .page-subtitle,
+body.light .project-content p,
+body.light .project-content li {
+    color: #475569;
+}
