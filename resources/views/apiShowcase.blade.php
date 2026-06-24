@@ -2,118 +2,128 @@
 
 @section('content')
 
-<section class="section">
+<section class="section api-coming-soon">
 
     <div class="container">
 
-        <!-- HEADER -->
-        <div class="page-header">
+        <div class="api-soon-layout">
 
-            <div class="hero-badge">
-                API Showcase
+            <div class="api-soon-copy">
+
+                <div class="hero-badge">
+                    API Showcase
+                </div>
+
+                <h1 class="page-title">
+                    API Showcase Coming Soon
+                </h1>
+
+                <p class="page-subtitle">
+                    I’m preparing a cleaner showcase for real API examples,
+                    including request payloads, response formats, validation
+                    states, and payment or system workflow samples.
+                </p>
+
+                <div class="api-progress-card">
+
+                    <div>
+                        <span>Progress</span>
+                        <strong>In Development</strong>
+                    </div>
+
+                    <div class="progress-track">
+                        <span></span>
+                    </div>
+
+                    <p>
+                        Building the page structure, API examples, and polished
+                        documentation-style previews.
+                    </p>
+
+                </div>
+
+                <div class="hero-buttons">
+
+                    <a href="/projects" class="btn primary">
+                        View Projects
+                    </a>
+
+                    <a href="/contact" class="btn secondary">
+                        Ask About APIs
+                    </a>
+
+                </div>
+
             </div>
 
-            <h1 class="page-title">
-                REST APIs I Build
-            </h1>
+            <div class="api-preview-card">
 
-            <p class="page-subtitle">
-                Real-world API designs used in payment systems,
-                property platforms, and enterprise applications.
-            </p>
+                <div class="preview-header">
+
+                    <div>
+                        <span class="method post">POST</span>
+                        <code>/api/transactions/create</code>
+                    </div>
+
+                    <span class="preview-status">
+                        Sneak Peek
+                    </span>
+
+                </div>
+
+                <p class="api-desc">
+                    Example of a multi-currency transaction endpoint preview.
+                </p>
+
+                <div class="preview-columns">
+
+                    <div>
+                        <span>Request</span>
+
+                        <pre class="api-response">{
+  "amount": 120.50,
+  "currency": "USD",
+  "customer_email": "user@example.com"
+}</pre>
+
+                    </div>
+
+                    <div>
+                        <span>Response</span>
+
+                        <pre class="api-response">{
+  "success": true,
+  "transaction_id": "TXN_20481",
+  "status": "pending",
+  "redirect_url": "https://..."
+}</pre>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
-        <!-- API LIST -->
-        <div class="api-grid">
+        <div class="api-roadmap">
 
-            <!-- API CARD -->
-            <div class="api-card">
-
-                <div class="api-header">
-                    <span class="method post">POST</span>
-                    <code>/api/payment/create</code>
-                </div>
-
-                <p class="api-desc">
-                    Create a new payment transaction
-                </p>
-
-                <!-- TOGGLE -->
-                <div class="toggle-row">
-                    <button onclick="showSuccess(this)" class="toggle active">Success</button>
-                    <button onclick="showFail(this)" class="toggle">Fail</button>
-                </div>
-
-                <!-- RESPONSE -->
-                <pre class="api-response">
-{
-  "success": true,
-  "transaction_id": "TXN_98231",
-  "amount": 100.00,
-  "currency": "MYR"
-}
-                </pre>
-
+            <div class="api-roadmap-item">
+                <span>01</span>
+                <h2>Payment Flow Examples</h2>
+                <p>Create transaction, update status, callback response, and error handling.</p>
             </div>
 
-            <!-- API CARD -->
-            <div class="api-card">
-
-                <div class="api-header">
-                    <span class="method get">GET</span>
-                    <code>/api/booking/list</code>
-                </div>
-
-                <p class="api-desc">
-                    Get all facility bookings for user
-                </p>
-
-                <div class="toggle-row">
-                    <button onclick="showSuccess(this)" class="toggle active">Success</button>
-                    <button onclick="showFail(this)" class="toggle">Fail</button>
-                </div>
-
-                <pre class="api-response">
-{
-  "success": true,
-  "data": [
-    {
-      "id": 1,
-      "facility": "Swimming Pool",
-      "date": "2026-01-01"
-    }
-  ]
-}
-                </pre>
-
+            <div class="api-roadmap-item">
+                <span>02</span>
+                <h2>System Workflow APIs</h2>
+                <p>Booking, visitor registration, user records, and dashboard data endpoints.</p>
             </div>
 
-            <!-- API CARD -->
-            <div class="api-card">
-
-                <div class="api-header">
-                    <span class="method post">POST</span>
-                    <code>/api/visitor/register</code>
-                </div>
-
-                <p class="api-desc">
-                    Register visitor for security system
-                </p>
-
-                <div class="toggle-row">
-                    <button onclick="showSuccess(this)" class="toggle active">Success</button>
-                    <button onclick="showFail(this)" class="toggle">Fail</button>
-                </div>
-
-                <pre class="api-response">
-{
-  "success": true,
-  "visitor_id": "VST_10291",
-  "status": "approved"
-}
-                </pre>
-
+            <div class="api-roadmap-item">
+                <span>03</span>
+                <h2>Documentation Preview</h2>
+                <p>Clean request and response samples arranged like developer documentation.</p>
             </div>
 
         </div>
@@ -121,47 +131,5 @@
     </div>
 
 </section>
-
-<script>
-
-function showSuccess(btn) {
-
-    const card = btn.closest('.api-card');
-
-    const pre = card.querySelector('.api-response');
-
-    const buttons = card.querySelectorAll('.toggle');
-
-    buttons.forEach(b => b.classList.remove('active'));
-
-    btn.classList.add('active');
-
-    pre.textContent = JSON.stringify({
-        success: true,
-        message: "Request successful",
-        data: "Sample response payload"
-    }, null, 2);
-}
-
-function showFail(btn) {
-
-    const card = btn.closest('.api-card');
-
-    const pre = card.querySelector('.api-response');
-
-    const buttons = card.querySelectorAll('.toggle');
-
-    buttons.forEach(b => b.classList.remove('active'));
-
-    btn.classList.add('active');
-
-    pre.textContent = JSON.stringify({
-        success: false,
-        error: "INVALID_REQUEST",
-        message: "Something went wrong"
-    }, null, 2);
-}
-
-</script>
 
 @endsection

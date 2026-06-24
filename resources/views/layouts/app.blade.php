@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Hazamy — Full Stack Developer</title>
 
@@ -13,7 +14,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body>
+<body class="light">
 
 <div class="gradient-bg"></div>
 
@@ -41,7 +42,7 @@
 
                 <div class="switch-thumb">
 
-                    <span id="switchIcon">🌙</span>
+                    <span id="switchIcon">☀️</span>
 
                 </div>
 
@@ -82,7 +83,13 @@ function toggleTheme() {
 
 window.onload = () => {
 
-    if(localStorage.getItem('theme') === 'light') {
+    if(localStorage.getItem('theme') === 'dark') {
+
+        document.body.classList.remove('light');
+
+        document.getElementById('switchIcon').innerHTML = '🌙';
+
+    } else {
 
         document.body.classList.add('light');
 

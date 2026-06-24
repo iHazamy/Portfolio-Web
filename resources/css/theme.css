@@ -38,3 +38,9 @@ body.light .switch-track {
 body.light .switch-thumb {
     left: 32px;
 }
+
+@media (max-width: 620px) {
+    body.light .switch-thumb {
+        left: 28px;
+    }
+}
