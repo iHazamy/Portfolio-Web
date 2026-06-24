@@ -14,13 +14,36 @@
             </div>
 
             <h1 class="page-title">
-                Projects & Systems
+                Projects Built Around Real Workflows
             </h1>
 
             <p class="page-subtitle">
-                Production-grade platforms, APIs, and enterprise systems
-                built for real-world usage.
+                PHP applications, JavaScript interfaces, backend systems, and API
+                concepts designed around practical use cases like payments,
+                resident services, and admin operations.
             </p>
+
+        </div>
+
+        <div class="project-overview">
+
+            <div class="overview-card">
+                <span>Focus</span>
+                <strong>Complete Web Solutions</strong>
+                <p>Frontend pages, backend workflows, APIs, dashboards, and database-driven features.</p>
+            </div>
+
+            <div class="overview-card">
+                <span>Stack</span>
+                <strong>PHP + JavaScript</strong>
+                <p>Laravel, CodeIgniter, Vue, REST APIs, MySQL, Git, and responsive UI work.</p>
+            </div>
+
+            <div class="overview-card">
+                <span>Delivery</span>
+                <strong>Practical & Maintainable</strong>
+                <p>Projects are arranged around clear use cases, readable code, and real user actions.</p>
+            </div>
 
         </div>
 
@@ -31,12 +54,25 @@
             <div class="project-card">
 
                 <div class="project-image glow-blue">
-                    Condo Platform
+                    <span class="project-number">
+                        01
+                    </span>
+
+                    <div>
+                        <p>Property</p>
+                        <strong>Management</strong>
+                    </div>
                 </div>
 
                 <div class="project-content">
 
+                    <div class="project-meta">
+                        <span>Portfolio Case Study</span>
+                        <span>Backend + Dashboard</span>
+                    </div>
+
                     <div class="project-tags">
+                        <span>PHP</span>
                         <span>Laravel</span>
                         <span>MySQL</span>
                         <span>REST API</span>
@@ -47,16 +83,29 @@
                     </h2>
 
                     <p>
-                        Enterprise multi-role platform for residents,
-                        management teams, and security guards.
+                        A multi-role property management concept for residents,
+                        management teams, and security guards. The system is
+                        structured around everyday condo workflows and clean
+                        backend data flow.
                     </p>
 
-                    <ul>
-                        <li>Facility booking system</li>
-                        <li>Visitor registration</li>
-                        <li>Resident payment system</li>
-                        <li>Admin & management dashboards</li>
-                    </ul>
+                    <div class="project-feature-grid">
+
+                        <div>
+                            <span>Core Modules</span>
+                            <p>Facility bookings, visitor registration, resident payments</p>
+                        </div>
+
+                        <div>
+                            <span>Admin Tools</span>
+                            <p>Management dashboards, user roles, operational records</p>
+                        </div>
+
+                    </div>
+
+                    <a href="/contact" class="project-link">
+                        Discuss similar system
+                    </a>
 
                 </div>
 
@@ -66,14 +115,28 @@
             <div class="project-card">
 
                 <div class="project-image glow-purple">
-                    T-Pay
+                    <span class="project-number">
+                        02
+                    </span>
+
+                    <div>
+                        <p>Payment</p>
+                        <strong>Gateway</strong>
+                    </div>
                 </div>
 
                 <div class="project-content">
 
+                    <div class="project-meta">
+                        <span>API Concept</span>
+                        <span>Multi-Currency Flow</span>
+                    </div>
+
                     <div class="project-tags">
                         <span>Payments</span>
                         <span>API</span>
+                        <span>Multi-Currency</span>
+                        <span>PHP</span>
                         <span>Laravel</span>
                     </div>
 
@@ -82,16 +145,28 @@
                     </h2>
 
                     <p>
-                        Built payment gateway infrastructure and merchant
-                        integration system.
+                        A payment gateway concept focused on creating
+                        transactions, supporting different currencies, connecting
+                        merchant systems, and handling secure status callbacks.
                     </p>
 
-                    <ul>
-                        <li>Transaction processing</li>
-                        <li>Merchant API integration</li>
-                        <li>Payment status callbacks</li>
-                        <li>Secure payment architecture</li>
-                    </ul>
+                    <div class="project-feature-grid">
+
+                        <div>
+                            <span>Transaction Flow</span>
+                            <p>Create payments, store currency and amount, update status</p>
+                        </div>
+
+                        <div>
+                            <span>Integration</span>
+                            <p>Merchant API structure, callbacks, response payloads</p>
+                        </div>
+
+                    </div>
+
+                    <a href="/apiShowcase" class="project-link">
+                        View API examples
+                    </a>
 
                 </div>
 
@@ -101,13 +176,27 @@
             <div class="project-card">
 
                 <div class="project-image glow-green">
-                    Freelance
+                    <span class="project-number">
+                        03
+                    </span>
+
+                    <div>
+                        <p>Full Stack</p>
+                        <strong>Support</strong>
+                    </div>
                 </div>
 
                 <div class="project-content">
 
+                    <div class="project-meta">
+                        <span>Freelance Work</span>
+                        <span>Debugging + Features</span>
+                    </div>
+
                     <div class="project-tags">
+                        <span>PHP</span>
                         <span>Laravel</span>
+                        <span>CodeIgniter</span>
                         <span>Docker</span>
                         <span>Full Stack</span>
                     </div>
@@ -117,16 +206,89 @@
                     </h2>
 
                     <p>
-                        Various freelance projects including FYP systems,
-                        debugging, integrations, and custom applications.
+                        Practical development work across student systems,
+                        debugging tasks, backend features, integrations, and
+                        custom web application improvements.
                     </p>
 
-                    <ul>
-                        <li>University systems</li>
-                        <li>Bug fixing</li>
-                        <li>Backend architecture</li>
-                        <li>API integrations</li>
-                    </ul>
+                    <div class="project-feature-grid">
+
+                        <div>
+                            <span>Common Tasks</span>
+                            <p>Bug fixing, feature updates, database changes, UI cleanup</p>
+                        </div>
+
+                        <div>
+                            <span>Delivery Focus</span>
+                            <p>Readable code, practical fixes, and clear project structure</p>
+                        </div>
+
+                    </div>
+
+                    <a href="/contact" class="project-link">
+                        Start a project
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PROJECT -->
+            <div class="project-card">
+
+                <div class="project-image glow-pink">
+                    <span class="project-number">
+                        04
+                    </span>
+
+                    <div>
+                        <p>Business</p>
+                        <strong>Landing Page</strong>
+                    </div>
+                </div>
+
+                <div class="project-content">
+
+                    <div class="project-meta">
+                        <span>Business Website</span>
+                        <span>Frontend + CTA</span>
+                    </div>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Vue</span>
+                        <span>Responsive UI</span>
+                    </div>
+
+                    <h2>
+                        Business Landing Page
+                    </h2>
+
+                    <p>
+                        A modern landing page concept for small businesses,
+                        designed to present the brand, services, offers, opening
+                        details, and customer contact actions clearly.
+                    </p>
+
+                    <div class="project-feature-grid">
+
+                        <div>
+                            <span>Business Sections</span>
+                            <p>Hero banner, service highlights, offers, gallery, location</p>
+                        </div>
+
+                        <div>
+                            <span>Conversion Focus</span>
+                            <p>WhatsApp order button, contact CTA, mobile-friendly layout</p>
+                        </div>
+
+                    </div>
+
+                    <a href="/contact" class="project-link">
+                        Request a business page
+                    </a>
 
                 </div>
 

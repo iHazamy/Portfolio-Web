@@ -31,7 +31,7 @@ body {
 
 /* LAYOUT */
 .container {
-    width: 90%;
+    width: min(90%, 1200px);
     max-width: 1200px;
     margin: auto;
 }
@@ -98,4 +98,75 @@ nav a:hover {
 
 .alt {
     background: rgba(255,255,255,0.02);
+}
+
+@media (max-width: 860px) {
+    .nav-inner {
+        align-items: flex-start;
+        gap: 16px;
+        padding: 16px 0;
+    }
+
+    nav {
+        flex: 1;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        border-radius: 10px;
+        background: rgba(255,255,255,0.04);
+        font-size: 14px;
+    }
+
+    .theme-switch {
+        margin-top: 2px;
+    }
+
+    .section {
+        padding: 100px 0;
+    }
+
+    .section h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        width: min(92%, 1200px);
+    }
+
+    .nav-inner {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
+    nav {
+        grid-column: 1 / -1;
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 4px;
+        scrollbar-width: none;
+    }
+
+    nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    nav a {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+
+    .section {
+        padding: 78px 0;
+    }
+
+    .section p {
+        font-size: 16px;
+    }
 }
